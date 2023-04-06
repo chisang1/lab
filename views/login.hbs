@@ -1,0 +1,40 @@
+<div class="container">
+      <div class="row col-12 col-md-4 m-auto mt-5 border border-danger p-3">
+        <h1 class="alert alert-success">Login</h1>
+        <form  method="POST" action="/api/signin">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Username</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              name="username"
+            />
+           
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              name="password"
+            />
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Login</button>
+          
+        </form>
+        <form method="post" action="/signup">
+            <div class="d-flex flex-row">
+                <p class="p-2 mt-2 bg-body border border-white col">Don't have an account ?</p>
+                <a href="/users/signup" class="p-2 mt-2 bg-body border border-white col">Sign Up</a>
+            </div>
+        </form>
+      </div>
+    </div>

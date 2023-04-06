@@ -1,0 +1,36 @@
+<div class="container-fluid">
+      
+
+        <div class="row bg-secondary-subtle">
+        <h1>List Books</h1>
+      </div>
+      
+      
+      <div class="row p-3 ms-10 me-10">
+        <table class="table table-bordered table-hover text-center">
+          <thead>
+            <tr class="table-dark">
+              
+              <th scope="col">Isbn</th>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Publisher</th>
+             </tr>
+          </thead>
+          <tbody>
+            {{#each data}}
+            <tr>
+              
+              <td>{{this.isbn}}</td>
+              <td>{{this.title}}</td>
+              <td>{{this.author}}</td>
+              <td>
+               {{this.publisher}}
+              </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+     
+    </div>
